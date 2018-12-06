@@ -58,7 +58,6 @@ defmodule FindOverlappingSquares do
     def processFile(filename) do
         File.stream!(filename)
         |> Stream.map(&String.trim/1)
-        #|> Stream.map(&String.to_charlist/1)
         |> Stream.map(&str2box/1)
         |> Stream.transform({MapSet.new(), MapSet.new()}, fn
             (box, {covered, multi_covered}) ->
