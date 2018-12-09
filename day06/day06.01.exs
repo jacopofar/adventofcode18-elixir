@@ -162,7 +162,7 @@ end
 
 
 svgdata = SomethingVoronoi.regions_to_svg(SomethingVoronoi.coords_from_file!("day06.txt"))
-File.write!("day06.svg", svgdata)
+File.write!("day06.01.svg", svgdata)
 IO.puts "SVG map generated!"
 
 ranked_regions = SomethingVoronoi.coords_from_file!("day06.txt")
