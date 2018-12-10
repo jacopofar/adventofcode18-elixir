@@ -128,4 +128,4 @@ big_hole_size = SomethingVoronoi.coords_from_file!("day06.txt")
     |> Enum.filter(fn ({{_, _}, r}) -> r < 10000 end)
     |> Enum.count
 
-    IO.puts "the size of the area with a sum < 1000 is #{big_hole_size}"
+IO.puts "the size of the area with a sum < 1000 is #{big_hole_size}"
